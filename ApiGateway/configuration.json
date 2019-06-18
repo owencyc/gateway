@@ -1,0 +1,28 @@
+{
+    "ReRoutes": [
+      {
+        "DownstreamPathTemplate": "/RfidApi/api/adapter",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "116.62.136.201",
+            "Port": 8100
+          }
+        ],
+        "UpstreamPathTemplate": "/webapia/values",
+        "UpstreamHttpMethod": [ "post" ]
+      },
+      {
+        "DownstreamPathTemplate": "/wechatapi/home/test",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "221.226.187.245",
+            "Port": 8888
+          }
+        ],
+        "UpstreamPathTemplate": "/webapib/values",
+        "UpstreamHttpMethod": [ "Get" ]
+      }
+    ]
+  }
